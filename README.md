@@ -1,1 +1,1 @@
-Simple Webpage of my portfolio using html ans css.
+Simple Webpage of my portfolio using html and css.
