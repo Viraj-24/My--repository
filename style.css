@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+font-family: arial;
+}
+
+body{
+    background: black ;
+    color: aliceblue;
+}
+.head{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    z-index: 100;
+}
+.logo{
+    font-size: 25px;
+    color: aqua;
+    font-weight: 600;
+    text-decoration: none;
+}
+.navbar a{
+    font-size: 18px;
+    color:aqua;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left:40px;
+transition: 0.5;
+
+}
+.navbar a:hover,
+.navbar a.active{
+    color:gray;
+}
+
+.home{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    padding:0 10%;
+    background: url('web.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.h-c{
+    max-width:600px ;
+    
+}
+.h-c h1{
+    font-size: 50px;
+    font-weight: 700; 
+}
+
+.h-c h3{
+    font-size: 40px;
+    font-weight: 700;
+    color: aqua;
+    margin-top: 10px;
+}
+.h-c p{
+    font-size: 30px;
+    font-weight: 700;
+    color:white;
+    margin: 20px 0 40px;
+
+}
+.h-c .button{
+    width:345px;
+    display: flex;
+    height:50px;
+    justify-content: space-between;
+    
+}
+.button a{
+    position: relative;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    width:150px;
+    height: 100%;
+    background:transparent;
+    border:2px solid whitesmoke;
+    border-radius: 9px;
+    border-width: 1px;
+    font-size:20px;
+    color:aqua;
+    text-decoration: none;
+    font-weight:700;
+    letter-spacing: 0.5px;
+    justify-content: space-between;
+    overflow: hidden;
+    z-index: 1;
+    
+}
+.button a:hover{
+    color:black;
+    transition:.5s;
+}
+.button a::before{
+    content: ' ';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: aqua;
+    z-index: -1;
+    transition: .5s;
+}
+.button a:hover::before{
+    width: 100%;
+}
+.media{
+    position:absolute;
+    bottom: 40px;
+    width:160px;
+  
+    display: flex;
+    justify-content: space-between;
+}
+.button  a:hover::before{
+    width: 100%;
+
+}
+.media a { 
+    position: relative;
+    display: inline-flex;
+    width:40px;
+    height :40px;
+    background: transparent;
+    border:2px solid skyblue;
+    border-radius: 50%;
+    font-size:20px;
+    color: skyblue;
+    text-decoration: none;
+    justify-content:center;
+    z-index: 1;
+    overflow: hidden;
+}
+.media a:hover{
+  color: #081b29;
+}
+
+.media a::before{
+    content: ' ';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: skyblue;
+    z-index: -1;
+    transition: .5s;
+}
+.media  a:hover::before{
+    width: 100%;
+
+}
